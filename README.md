@@ -6,7 +6,10 @@ A project template for DataOps CI/CD on GitHub.
 
 ## Testing
 
-To test, first use the link above to open the project in Docker.
+To test, first use the link above to open the project in VS Code, selecting the "containers" option when prompted.
+
+The only prerequisites to get started is to install VS Code and Docker. As needed, VS Code will prompt you to install any
+additional extensions needed to open the project.
 
 ### Run a simple Meltano pipeline
 
