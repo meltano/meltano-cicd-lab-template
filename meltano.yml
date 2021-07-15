@@ -1,3 +1,21 @@
 version: 1
 send_anonymous_usage_stats: true
 project_id: d0ae56b2-39e7-46ff-a181-f0dd27849221
+plugins:
+  extractors:
+  - name: tap-carbon-intensity
+    variant: meltano
+    pip_url: git+https://gitlab.com/meltano/tap-carbon-intensity.git
+  loaders:
+  - name: target-jsonl
+    variant: andyh1203
+    pip_url: target-jsonl
+  - name: target-snowflake
+    variant: transferwise
+    pip_url: pipelinewise-target-snowflake
+  transformers:
+  - name: dbt
+    pip_url: dbt==0.19.1
+  files:
+  - name: dbt
+    pip_url: git+https://gitlab.com/meltano/files-dbt.git@config-version-2
