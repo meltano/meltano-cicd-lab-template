@@ -9,7 +9,7 @@ A project template for DataOps CI/CD on GitHub.
 To test, first use the `Open in VS Code` link above to open the project in VS Code using Docker containers.
 
 _Note: The only prerequisites to get started is to install **VS Code** and **Docker**. As needed, VS Code will prompt 
-you to install any additional extensions needed to open the project._
+you to install any additional extensions needed to [open the project](vscode://ms-vscode-remote.remote-containers/cloneInVolume?url=https%3A%2F%2Fgithub.com%2Fmeltano%2Fmeltano-cicd-lab-template)._
 
 ### Run a simple Meltano pipeline
 
