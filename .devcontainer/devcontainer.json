@@ -1,11 +1,12 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.187.0/containers/ubuntu
+// For format details, see https://aka.ms/devcontainer.json.
+// For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.187.0/containers/python-3
 {
-	"name": "Ubuntu",
+	"name": "Meltano",
 	"build": {
 		"dockerfile": "Dockerfile",
-		// Update 'VARIANT' to pick an Ubuntu version: focal, bionic
-		"args": { "VARIANT": "focal" }
+		// Optionally add build args to be passed to the dockerfile:
+		// "args": { "VARIANT": "focal" }
 	},
 
 	// Set *default* container specific settings.json values on container create.
@@ -22,6 +23,7 @@
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": "meltano install",
 
-	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
+	// Comment out to connect as root instead.
+	// More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "vscode"
 }
