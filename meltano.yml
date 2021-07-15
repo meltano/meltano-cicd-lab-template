@@ -1,6 +1,6 @@
 version: 1
 send_anonymous_usage_stats: true
-project_id: d0ae56b2-39e7-46ff-a181-f0dd27849221
+project_id: meltano-cicd-lab-template-sample
 plugins:
   extractors:
   - name: tap-carbon-intensity
