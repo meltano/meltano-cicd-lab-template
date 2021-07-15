@@ -6,7 +6,7 @@ A project template for DataOps CI/CD on GitHub.
 
 ## Testing
 
-To test, first use the `Open in VS Code` link above to open the project in VS Code.
+To test, first use the `Open in VS Code` link above to open the project in VS Code using Docker containers.
 
 _Note: The only prerequisites to get started is to install **VS Code** and **Docker**. As needed, VS Code will prompt 
 you to install any additional extensions needed to open the project._
@@ -19,6 +19,13 @@ in a new VS Code terminal:
 ```bash
 meltano elt tap-carbon-intensity target-jsonl 
 ```
+
+Debugging:
+
+- If you get a message that the plugin is not yet installed, you might need to wait until all installs have
+  completed. These should automatically run in a new terminal the first time you open the repo.
+- If the plugins are still not available and you don't see an open terminal with the install progress, you
+  can create a new terminal and manually run `meltano install` to install any missing plugins.
 
 ### Launch the web UI
 
