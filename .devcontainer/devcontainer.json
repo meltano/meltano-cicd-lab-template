@@ -9,9 +9,6 @@
 		// "args": { "VARIANT": "focal" }
 	},
 
-	// Set *default* container specific settings.json values on container create.
-	"settings": {},
-
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
 		"innoverio.vscode-dbt-power-user"
@@ -25,5 +22,15 @@
 
 	// Comment out to connect as root instead.
 	// More info: https://aka.ms/vscode-remote/containers/non-root.
-	"remoteUser": "vscode"
+	"remoteUser": "vscode",
+
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
+		"python.linting.ignorePatterns": [
+			".vscode/*.py",
+			"**/site-packages/**/*.py",
+			".meltano"
+		],
+		"python.testing.pytestEnabled": false,
+	},
 }
